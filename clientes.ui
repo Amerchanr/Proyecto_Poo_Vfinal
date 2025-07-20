@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Clientes</class>
+ <widget class="QWidget" name="Clientes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestión de Clientes</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QPushButton {
+        background-color: #007BFF;
+        color: white;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+    }
+    QPushButton:hover {
+        background-color: #0056b3;
+    }
+    QPushButton:pressed {
+        background-color: #dc3545;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- Título principal -->
+   <item>
+    <widget class="QLabel" name="labelTitulo">
+     <property name="text">
+      <string>Registrar nuevo cliente</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Campos de registro -->
+   <item>
+    <widget class="QLabel" name="label_id">
+     <property name="text">
+      <string>ID Cliente:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_id"/>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="label_nombre">
+     <property name="text">
+      <string>Nombre:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_nombre"/>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="label_apellido">
+     <property name="text">
+      <string>Apellido:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_apellido"/>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="label_direccion">
+     <property name="text">
+      <string>Dirección:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_direccion"/>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="label_telefono">
+     <property name="text">
+      <string>Teléfono:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_telefono"/>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="label_correo">
+     <property name="text">
+      <string>Correo electrónico:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_correo"/>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btnGuardar">
+     <property name="text">
+      <string>Registrar cliente</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Subtítulo sección de consulta/actualización -->
+   <item>
+    <widget class="QLabel" name="label_subtitulo">
+     <property name="text">
+      <string>Consultar / Actualizar cliente</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- ID Cliente a consultar -->
+   <item>
+    <widget class="QLabel" name="label_id_buscar">
+     <property name="text">
+      <string>ID Cliente a consultar:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_id_buscar"/>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btnConsultar">
+     <property name="text">
+      <string>Consultar</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Nueva dirección -->
+   <item>
+    <widget class="QLabel" name="label_nueva_direccion">
+     <property name="text">
+      <string>Nueva dirección:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_nueva_direccion"/>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btnActualizar">
+     <property name="text">
+      <string>Actualizar dirección</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Resultado -->
+   <item>
+    <widget class="QLabel" name="labelResultado">
+     <property name="text">
+      <string>Resultado...</string>
+     </property>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

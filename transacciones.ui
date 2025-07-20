@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Transacciones</class>
+ <widget class="QWidget" name="Transacciones">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>514</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Transacciones – Créditos y Ahorros</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="labelTitulo">
+     <property name="text">
+      <string>&lt;h2&gt;Transacciones del Neobanco&lt;/h2&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelSub1">
+     <property name="text">
+      <string>&lt;b&gt;Consultar cuota crédito&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_id_credito">
+     <property name="text">
+      <string>ID de cuenta de crédito:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_id_credito"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnConsultarCuota">
+     <property name="styleSheet">
+      <string>QPushButton {
+    background-color: #0078d7;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: #005fa3;
+}
+QPushButton:pressed {
+    background-color: #c0392b;
+}</string>
+     </property>
+     <property name="text">
+      <string>Consultar cuota actual</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelSub2">
+     <property name="text">
+      <string>&lt;b&gt;Pagar cuota crédito&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnPagarCuota">
+     <property name="styleSheet">
+      <string>QPushButton {
+    background-color: #0078d7;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: #005fa3;
+}
+QPushButton:pressed {
+    background-color: #c0392b;
+}</string>
+     </property>
+     <property name="text">
+      <string>Pagar cuota</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelSub3">
+     <property name="text">
+      <string>&lt;b&gt;Consultar saldo de ahorro&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_id_ahorro">
+     <property name="text">
+      <string>ID de cuenta de ahorro:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_id_ahorro"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnConsultarSaldo">
+     <property name="styleSheet">
+      <string>QPushButton {
+    background-color: #0078d7;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: #005fa3;
+}
+QPushButton:pressed {
+    background-color: #c0392b;
+}</string>
+     </property>
+     <property name="text">
+      <string>Consultar saldo proyectado</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelSub4">
+     <property name="text">
+      <string>&lt;b&gt;Transacción de ahorro (consignar/retirar)&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_valor_transaccion">
+     <property name="text">
+      <string>Valor de transacción (+ consignar / - retirar):</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_valor"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnTransaccion">
+     <property name="styleSheet">
+      <string>QPushButton {
+    background-color: #0078d7;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: #005fa3;
+}
+QPushButton:pressed {
+    background-color: #c0392b;
+}</string>
+     </property>
+     <property name="text">
+      <string>Realizar transacción</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelRecibo">
+     <property name="text">
+      <string>&lt;b&gt;Recibo&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="textRecibo">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnGuardarPDF">
+     <property name="styleSheet">
+      <string>QPushButton {
+    background-color: #0078d7;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: #005fa3;
+}
+QPushButton:pressed {
+    background-color: #c0392b;
+}</string>
+     </property>
+     <property name="text">
+      <string>Guardar recibo en PDF</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

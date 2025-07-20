@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Productos</class>
+ <widget class="QWidget" name="Productos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestión de Productos</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QPushButton {
+        background-color: #0078d7;
+        color: white;
+        border-radius: 5px;
+        padding: 6px;
+    }
+    QPushButton:hover {
+        background-color: #005fa3;
+    }
+    QPushButton:pressed {
+        background-color: #c0392b;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+
+   <!-- Sección Crear Producto -->
+   <item>
+    <widget class="QGroupBox" name="group_crear">
+     <property name="title">
+      <string>Crear nuevo producto</string>
+     </property>
+     <layout class="QVBoxLayout" name="crearLayout">
+      <item><widget class="QLineEdit" name="input_id"><property name="placeholderText"><string>ID Producto</string></property></widget></item>
+      <item><widget class="QLineEdit" name="input_nombre"><property name="placeholderText"><string>Nombre del producto</string></property></widget></item>
+      <item><widget class="QLineEdit" name="input_tipo"><property name="placeholderText"><string>Tipo (1=Crédito, 2=Ahorros)</string></property></widget></item>
+      <item><widget class="QLineEdit" name="input_remun"><property name="placeholderText"><string>Tasa de Interés (%)</string></property></widget></item>
+      <item><widget class="QPushButton" name="btn_guardar"><property name="text"><string>Guardar producto</string></property></widget></item>
+     </layout>
+    </widget>
+   </item>
+
+   <!-- Sección Consultar Producto -->
+   <item>
+    <widget class="QGroupBox" name="group_consulta">
+     <property name="title">
+      <string>Consultar producto</string>
+     </property>
+     <layout class="QVBoxLayout" name="consultaLayout">
+      <item><widget class="QLineEdit" name="input_consulta"><property name="placeholderText"><string>ID producto a consultar</string></property></widget></item>
+      <item><widget class="QPushButton" name="btn_consultar"><property name="text"><string>Buscar</string></property></widget></item>
+      <item><widget class="QLabel" name="resultado"><property name="text"><string>Resultado...</string></property></widget></item>
+     </layout>
+    </widget>
+   </item>
+
+   <!-- Listado de productos -->
+   <item><widget class="QLabel" name="labelListado"><property name="text"><string>&lt;h3&gt;Listado de Productos&lt;/h3&gt;</string></property></widget></item>
+   <item><widget class="QPushButton" name="btn_listar"><property name="text"><string>Listar productos</string></property></widget></item>
+   <item>
+    <widget class="QTableWidget" name="tabla">
+     <column>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Nombre</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Tipo</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Interés %</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

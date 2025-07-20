@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NeobancoApp</class>
+ <widget class="QWidget" name="NeobancoApp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1045</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Neobanco Digital S.A.</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QWidget {
+        background-color: #f5f5f5;
+    }
+    QListWidget {
+        background-color: #003366;
+        color: white;
+        font-size: 16px;
+    }
+    QListWidget::item:selected {
+        background-color: white;
+        color: #003366;
+        font-weight: bold;
+    }
+    QLabel {
+        color: #003366;
+    }
+    #labelTitulo {
+        color: #002244;
+    }
+   </string>
+  </property>
+  <layout class="QHBoxLayout" name="mainLayout">
+   <item>
+    <widget class="QListWidget" name="menu">
+     <property name="font">
+      <font>
+       <family>Segoe UI Semibold</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>Inicio</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Clientes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Productos</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Contratar Producto</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Transacciones</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Salir</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stack">
+     <widget class="QWidget" name="paginaBienvenida">
+      <layout class="QVBoxLayout" name="layoutBienvenida">
+       <item>
+        <widget class="QLabel" name="labelTitulo">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>36</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Neobanco Digital S.A.</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelGrupo">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string notr="true">
+&lt;b&gt;Integrantes del Grupo:&lt;/b&gt;&lt;br&gt;
+Johan Santiago Monroy Bolaños&lt;br&gt;
+Arnold Joseph Merchan Rojas&lt;br&gt;
+William Alexander Bohorquez&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Profesor:&lt;/b&gt;&lt;br&gt;
+Jorge Enrique Amaya Cala&lt;br&gt;
+jeamayac@unal.edu.co
+</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::RichText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="paginaClientes"/>
+     <widget class="QWidget" name="paginaProductos"/>
+     <widget class="QWidget" name="paginaContratar"/>
+     <widget class="QWidget" name="paginaTransacciones"/>
+     <widget class="QWidget" name="paginaSalir"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
